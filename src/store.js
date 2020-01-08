@@ -22,8 +22,10 @@ export default function createStore(req) {
 		actions: {
 			fetchInitialState: async function(context,data) {
 				var _this = this;
-
-				context.commit('SET_BLINK',true);
+				setInterval( function() {
+					context.commit('SET_BLINK',!context.state.blink);
+				},1000);
+				
 				
 				
 			},

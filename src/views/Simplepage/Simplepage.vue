@@ -1,6 +1,7 @@
 <template>
   	<div class="simplepage">
 		<blinker></blinker>
+		<blinkerstandard></blinkerstandard>
 
   	</div>
 </template>

@@ -1,7 +1,8 @@
 <template>
 	<div>
-		<h1 v-if="blink">WORKING :)</h1>
-		<h1 v-else>NOT WORKING :(</h1>
+		<h2>blinker component made with composition API</h2>
+		<h1 v-if="blink">BLINK :)</h1>
+		<h1 v-else>WAITING BLINK :(</h1>
 	</div>
 	
 </template>
@@ -40,6 +41,9 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+	h2 {
+		color: grey;
+		border-top:1px solid black;
+	}
 
 </style>
