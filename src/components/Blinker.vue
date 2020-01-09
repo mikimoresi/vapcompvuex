@@ -13,7 +13,7 @@
 	import VueCompositionApi from "@vue/composition-api";
 
 	Vue.use(VueCompositionApi);
-	import useStore from '@/store';
+	import { useStore } from '@/store';
 	
 	import { computed } from '@vue/composition-api';
 	

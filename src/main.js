@@ -3,7 +3,7 @@ import Vue from 'vue';
 
 import createRouter from './createRouter';
 import App from './App.vue';
-import createStore from './store';
+import { store } from './store';
 import VueCompositionApi from "@vue/composition-api";
 
 Vue.use(VueCompositionApi);
@@ -30,7 +30,8 @@ export default function createApp ({ type, req}) {
 	window.Vue = Vue;
 	
 	const router = createRouter();
-	const store = createStore(req);
+	
+	store.state.running_on_host = (req?req.headers.host:false)
 
 	
 
