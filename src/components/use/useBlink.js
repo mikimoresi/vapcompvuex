@@ -8,11 +8,15 @@ export default function useBlink(store) {
 
 	const blink = computed(() => store_state.blink);
 	
-	var state = reactive({
+	var blink_state = reactive({
 		blink :blink
 	});
 
-	return state;
+	function testFunc () {
+		console.log('testFunc');
+	}
+
+	return {blink_state,testFunc};
 
 }
 

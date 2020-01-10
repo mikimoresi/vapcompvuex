@@ -5,12 +5,13 @@ import createRouter from './createRouter';
 import App from './App.vue';
 import { store } from './store';
 import VueCompositionApi from "@vue/composition-api";
+import {perf} from "@/tools/Logger";
 
 Vue.use(VueCompositionApi);
 
 
-Vue.config.productionTip = false;
 
+Vue.config.productionTip = false;
 
 
 
@@ -33,7 +34,7 @@ export default function createApp ({ type, req}) {
 	
 	store.state.running_on_host = (req?req.headers.host:false)
 
-	
+
 
   	// 2. Create a app instance
   	const app = new Vue({

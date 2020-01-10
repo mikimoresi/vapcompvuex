@@ -15,42 +15,18 @@
 	
 	import useBlink from '@/components/use/useBlink';
 	import useBlinktoggler from '@/components/use/useBlinktoggler';
-
-	
-
-
-	
+	 
 
 	export default {
 		name: 'blinker',
 		setup(props, {root}) {
 			//var start = window.performance.now();
-
+			
 			var store = useStore();
 			
-			const blink_state = useBlink(store);
-			const {blinktoggler_state , toggleBlinker} = useBlinktoggler(store);
+			const {blink_state, testFunc} = useBlink(store);
+			const {blinktoggler_state , toggleBlinker} = useBlinktoggler(store,testFunc);
 
-			
-			//var store = useStore();
-			//var store_state =  store.state;
-			//
-			//
-			//const blink = computed(() => store_state.blink);
-			//const run_blinker = computed(() => store_state.run_blinker);
-			//
-			//var state = reactive({
-			//	blink :blink,
-			//	run_blinker:run_blinker
-			//});
-//
-			//function toggleBlinker () {
-			//	store.dispatch('toggleBlinker');
-			//}
-			//var end1 = window.performance.now();
-			//window.mapTime = window.mapTime ? window.mapTime+(end1-start):0+(end1-start)
-			//console.log('time '+(window.mapTime));
-			
 
 			return {
 				blink_state,

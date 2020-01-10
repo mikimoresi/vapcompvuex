@@ -1,7 +1,7 @@
 
 import { computed,reactive } from '@vue/composition-api';
 
-export default function useBlinktoggler(store) {
+export default function useBlinktoggler(store,testFunc) {
 	
 	var store = store;
 	var store_state =  store.state;
@@ -15,6 +15,8 @@ export default function useBlinktoggler(store) {
 	var blinktoggler_state = reactive({
 		run_blinker :run_blinker
 	});
+	
+	testFunc();
 
 	return { blinktoggler_state, toggleBlinker};
 
