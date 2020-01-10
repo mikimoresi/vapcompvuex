@@ -1,6 +1,6 @@
 <template>
   	<div class="simplepage">
-		<blinker></blinker>
+		<blinker :test="'test_prop'"></blinker>
 		<blinkerstandard></blinkerstandard>
 
   	</div>

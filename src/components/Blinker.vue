@@ -19,12 +19,13 @@
 
 	export default {
 		name: 'blinker',
-		setup(props, {root}) {
+		props: ['test'],
+		setup(props, {parent}) {
 			//var start = window.performance.now();
-			
+			console.log(parent);
 			var store = useStore();
 			
-			const {blink_state, testFunc} = useBlink(store);
+			const {blink_state, testFunc} = useBlink(store,props);
 			const {blinktoggler_state , toggleBlinker} = useBlinktoggler(store,testFunc);
 
 

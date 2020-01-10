@@ -34,7 +34,7 @@ export default function createApp ({ type, req}) {
 	
 	store.state.running_on_host = (req?req.headers.host:false)
 
-
+	perf();
 
   	// 2. Create a app instance
   	const app = new Vue({
