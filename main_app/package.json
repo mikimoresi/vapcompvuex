@@ -1,0 +1,22 @@
+{
+  "name": "vapcompvuex",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vapper dev",
+    "build": "vapper build",
+    "start": "vapper start"
+  },
+  "dependencies": {
+    "@vapper/core": "^0.14.1",
+    "@vue/composition-api": "^0.3.4",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.7",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "@vapper/configer-vue-cli": "^0.6.0",
+    "@vue/cli-service": "^3.9.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

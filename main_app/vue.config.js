@@ -8,5 +8,12 @@ module.exports = {
   	css: {
     	extract: true,
     	sourceMap: false
-  	}
+	},
+	configureWebpack: {
+	    resolve: {
+	      	alias: {
+	        	"@alt_src": path.resolve(__dirname, '../comps_repo/')
+	    	}
+		}
+	}
 }

@@ -1,5 +1,5 @@
 
-import { computed,reactive } from '@vue/composition-api';
+import { computed,reactive,onMounted } from '@vue/composition-api';
 
 export default function useBlink(store,props) {
 	console.log(props);
@@ -20,6 +20,8 @@ export default function useBlink(store,props) {
 	function testFunc () {
 		console.log('testFunc');
 	}
+
+	
 
 	return {blink_state,testFunc};
 

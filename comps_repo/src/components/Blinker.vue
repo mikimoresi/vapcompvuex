@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h2>blinker component made with composition API</h2>
+		<h2>blinker component made with composition API in external dir resolved by webpack alias</h2>
 		<h1 v-if="blink_state.blink">BLINK :)</h1>
 		<h1 v-else>WAITING BLINK :(</h1>
 		<button v-on:click="toggleBlinker()"><span v-if="blinktoggler_state.run_blinker">pause</span><span v-else>start</span></button>
@@ -9,12 +9,16 @@
 </template>
 
 <script>
+	import Vue from 'vue';
+	import VueCompositionApi from "@vue/composition-api";
 
+	Vue.use(VueCompositionApi);
 	
+
 	import { useStore } from '@/store';
 	
-	import useBlink from '@/components/use/useBlink';
-	import useBlinktoggler from '@/components/use/useBlinktoggler';
+	import useBlink from '@alt_src/src/components/use/useBlink';
+	import useBlinktoggler from '@alt_src/src/components/use/useBlinktoggler';
 	 
 
 	export default {
@@ -22,8 +26,10 @@
 		props: ['test'],
 		setup(props, {parent}) {
 			//var start = window.performance.now();
-			console.log(parent);
+			//console.log(parent);
 			var store = useStore();
+
+			
 			
 			const {blink_state, testFunc} = useBlink(store,props);
 			const {blinktoggler_state , toggleBlinker} = useBlinktoggler(store,testFunc);
