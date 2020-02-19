@@ -1,0 +1,110 @@
+{
+  "publicPath": "/",
+  "all": [
+    "css/view-Simplepage-Simplepage-vue.d0fddcf8.css",
+    "index.html",
+    "js/app.f7c586fd.js",
+    "js/chunk-vendors.cac15012.js",
+    "js/runtime~app.3c4fad44.js",
+    "js/view-Simplepage-Simplepage-vue.1861e40e.js"
+  ],
+  "initial": [
+    "js/runtime~app.3c4fad44.js",
+    "js/chunk-vendors.cac15012.js",
+    "js/app.f7c586fd.js"
+  ],
+  "async": [
+    "css/view-Simplepage-Simplepage-vue.d0fddcf8.css",
+    "js/view-Simplepage-Simplepage-vue.1861e40e.js"
+  ],
+  "modules": {
+    "61913884": [
+      3
+    ],
+    "2019dbee": [
+      2
+    ],
+    "5d9414f0": [
+      0,
+      5
+    ],
+    "98fb6e30": [
+      0,
+      5
+    ],
+    "3e4bb640": [
+      0,
+      5
+    ],
+    "1adea5b0": [
+      0,
+      5
+    ],
+    "645fcba8": [
+      0,
+      5
+    ],
+    "b34060f8": [
+      3
+    ],
+    "7aa53def": [
+      3
+    ],
+    "10dd6e81": [
+      3
+    ],
+    "547d2e2a": [
+      3
+    ],
+    "50513ad4": [
+      2
+    ],
+    "69ab60be": [
+      0,
+      5
+    ],
+    "0ee280f6": [
+      0,
+      5
+    ],
+    "6c331555": [
+      2
+    ],
+    "c5584be6": [
+      3
+    ],
+    "6b07e9f0": [
+      3
+    ],
+    "d012e5ae": [
+      2
+    ],
+    "e66801f6": [
+      3
+    ],
+    "127ae97e": [
+      0,
+      5
+    ],
+    "5455d74e": [
+      0,
+      5
+    ],
+    "dd257974": [
+      0,
+      5
+    ],
+    "fdcacec2": [
+      2
+    ],
+    "2d30d6a2": [
+      3
+    ],
+    "2e4100d3": [
+      2
+    ],
+    "0227986c": [
+      2
+    ]
+  }
+}
